@@ -1,7 +1,7 @@
 (function ($) {
     $.ajax({  // jQueryのajaxでjsonデータを取得しますね
         type: 'GET',
-        url: 'https://graph.facebook.com/v16.0/17841452900515096?access_token=EAAM9udmo87gBAGLGaJ8CcZBxgPHx8CbLAKZCSvv3flvw1InZC7vyMrZAvFrOZAS5EzUPOtKrIN3WajTIQpm5sDCu4XzFZC9jfGkWAWZC7Fj025ohZB1RmBNakm8tTk8M6fMrHHwhhHP23d8vlnSbuyXupEXb6hXsr3MZALFW3Hl4UNHtU5z4ZBZCWAIDrgBjEL8w7AhpmAkZBWnYZCO0ZBoQvTHDPDeNsQ4nUIwGwZD&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+        url: 'https://graph.facebook.com/v16.0/17841452900515096?access_token=EAAM9udmo87gBAJL7Knm7Cvn71eHWq4AX7KZApT0CuxMKoeJi12dpSwBmOgIX1tZCRIXIRD8UUIcPOZCo8xNGWYA4KBB7rfP08xy9eKDPSDBakysewk2nZCfcC51jRVZCOVsuncxIFOH1nUz7e1fQYewswt6oponxgB1yXhShBWWmxTQ2TiE6Mi1RtpVm5YQxcTF3GihIqQi9rtZC3xFuu0ZAY5BJX0GCS14rqVQzZBqZBAwZDZD&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
         dataType: 'json',　
         success: function (json) {
             var insta = json.media.data;
